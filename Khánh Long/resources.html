@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tài Nguyên & Công Cụ | Chăm sóc cây</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div ss="clalogo">🌱 Chăm sóc cây </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="technique.html">Kỹ thuật</a></li>
+                    <li><a href="resources.html" class="active">Tài nguyên</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <div class="resource-grid">
+            
+            <section class="resource-section">
+                <h2 style="color: var(--primary-color);">📥 Kho tài liệu số</h2>
+                <ul class="file-list">
+                    <li>
+                        <span>📄 Kỹ thuật trồng lúa bền vững (SRI).pdf</span>
+                        <a href="#" class="btn" style="padding: 5px 15px; font-size: 0.9rem;">Tải xuống</a>
+                    </li>
+                    <li>
+                        <span>📄 Hướng dẫn ủ phân hữu cơ tại nhà.pdf</span>
+                        <a href="#" class="btn" style="padding: 5px 15px; font-size: 0.9rem;">Tải xuống</a>
+                    </li>
+                    <li>
+                        <span>📄 Danh mục thuốc BVTV cho phép sử dụng.docx</span>
+                        <a href="#" class="btn" style="padding: 5px 15px; font-size: 0.9rem;">Tải xuống</a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="resource-section">
+                <h2 style="color: var(--primary-color);">🧮 Công cụ tính phân bón</h2>
+                <p style="margin-bottom: 20px;">Nhập thông số để ước tính lượng phân bón cần thiết (Giao diện demo).</p>
+                
+                <form class="calc-form" onsubmit="event.preventDefault(); alert('Đây là giao diện demo, chưa có xử lý JS!');">
+                    <div class="form-group">
+                        <label>Loại cây trồng:</label>
+                        <select>
+                            <option>Lúa nước</option>
+                            <option>Cà phê</option>
+                            <option>Rau ăn lá</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Diện tích (m2):</label>
+                        <input type="number" placeholder="Ví dụ: 1000">
+                    </div>
+                    <div class="form-group">
+                        <label>Giai đoạn sinh trưởng:</label>
+                        <select>
+                            <option>Bón lót</option>
+                            <option>Đẻ nhánh</option>
+                            <option>Nuôi quả/hạt</option>
+                        </select>
+                    </div>
+                    <div class="form-group" style="justify-content: flex-end;">
+                        <button type="submit" class="btn" style="width: 100%; margin-top: 24px;">Tính toán ngay</button>
+                    </div>
+                </form>
+            </section>
+
+            <section>
+                <h2 class="section-title">💬 Hỏi đáp nhà nông</h2>
+                <div class="card forum-card">
+                    <h4>Hỏi: Cách giảm sâu bệnh tự nhiên cho rau cải?</h4>
+                    <p style="font-size: 0.9rem; color: #666;">Đăng bởi: Nông dân A - 2 giờ trước</p>
+                    <hr style="margin: 10px 0; border: 0; border-top: 1px solid #eee;">
+                    <p>Tôi đang trồng cải ngọt nhưng bị sâu tơ nhiều quá, không muốn phun thuốc hóa học. Có cách nào dùng tỏi ớt không?</p>
+                </div>
+
+                <div class="card forum-card">
+                    <h4>Hỏi: Bón phân hữu cơ bao lâu 1 lần cho cây ăn quả?</h4>
+                    <p style="font-size: 0.9rem; color: #666;">Đăng bởi: Sinh viên B - 1 ngày trước</p>
+                    <hr style="margin: 10px 0; border: 0; border-top: 1px solid #eee;">
+                    <p>Em đang làm đề tài về cây bưởi, cho em hỏi chu kỳ bón phân chuồng ủ hoai là bao lâu ạ?</p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Chăm Sóc Cây. </p>
+        </div>
+    </footer>
+
+</body>
+</html>
